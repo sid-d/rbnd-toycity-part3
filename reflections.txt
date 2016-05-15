@@ -1,4 +1,4 @@
 I spent 10 hours working on this project.
 Combining Transactions between Customers and Products.
-Will add later.
+i. Added new info to customers. ii. added a way to retun the product.
 I have a vague understanding of everything that has been taught so far but still am  not comfortable with most ideas.
