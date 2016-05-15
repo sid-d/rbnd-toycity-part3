@@ -1,9 +1,14 @@
 class Customer
-	attr_reader :name
+	attr_reader :name, :age
 	@@customers = []
 
-	def initialize(option={})
-		@name = option[:name]
+	def initialize(info={})
+		@name = info[:name]
+
+		#new feature 1 - more details about customers
+		@age = info[:age]
+		@address = info[:address]
+
 		add_to_customers
 	end
 
@@ -48,6 +53,10 @@ class Customer
 		else
 			Transaction.new(self,product)
 		end
+	end
+
+	def returned(product)
+		product.stock += 1
 	end
 
 end
