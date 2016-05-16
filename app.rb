@@ -61,7 +61,7 @@ puts walter.purchase(nanoblock)
 puts Transaction.all.count # Should return 2
 
 transaction2 = Transaction.find(2)
-puts transaction2.product
+transaction2.product
 puts transaction2.product == nanoblock # Should return true
 
 #walter.purchase(firehouse)

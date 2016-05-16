@@ -30,7 +30,7 @@ class Customer
 		end
 
 		if name_taken == true
-				raise DuplicateProductError, "Duplicate Product based on name"
+				raise DuplicateCustomerError, "Duplicate Customer"
 		else
 				@@customers << self
 		end
