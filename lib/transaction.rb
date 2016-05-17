@@ -7,6 +7,7 @@ class Transaction
 	def initialize(customer,product)
 		@customer = customer
 		@product = product
+		raise PurchaseNoStock, "Sorry, there is no stock for the product" if product.stock == 0 
 		@id = @@id
 		@@id += 1
 		@product.stock -= 1

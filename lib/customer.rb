@@ -47,12 +47,8 @@ class Customer
 		end
 	end
 
-	def purchase(product)
-		if product.stock == 0
-			raise PurchaseNoStock, "Sorry, there is no stock for the product"
-		else
-			Transaction.new(self,product)
-		end
+	def purchase(product)		
+		Transaction.new(self,product)
 	end
 
 	def returned(product)
